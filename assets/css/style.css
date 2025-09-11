@@ -1,0 +1,254 @@
+/* geral */
+:root {
+    --primary-bg-color: #FFFFFF;
+
+    --primary-text-color: #333333;
+
+    --accent-color: #ff914d;
+
+    .dark-mode {
+        --primary-bg-color: #121212;
+
+        --primary-text-color: #E0E0E0;
+
+        --accent-color: #FFD700;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: 300ms ease-in-out;
+}
+
+body {
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+}
+
+/* header */
+
+/* main */
+
+main #hero {
+    height: 100dvh;
+    padding: 5%;
+    background-image: url(/assets/images/atras-alem.svg);
+    background-position: center;
+    background-size: cover;
+}
+
+main #hero .content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main #hero .content .top-hero,
+main #hero .content .bottom-hero {
+    height: 50%;
+}
+
+main #hero .content .top-hero h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.9rem;
+    /* font-weight: bolder; */
+}
+
+@media (max-width: 460px) {
+    main #hero .content .top-hero h1 {
+        margin-top: 15%;
+    }
+}
+
+main #hero .content .bottom-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+main #hero .content .bottom-hero .quote {
+    width: 80%;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+main #hero .content .bottom-hero a {
+    text-decoration: none;
+}
+
+main #hero .content .bottom-hero a button {
+    background-color: var(--accent-color);
+    border: none;
+    padding: 0.62rem 2rem;
+    border-radius: 5px;
+    color: #FFFFFF;
+}
+
+main #hero .content .bottom-hero a button:hover {
+    position: relative;
+    bottom: 2px;
+    box-shadow: 0 2px 8px 1px #121212;
+    cursor: pointer;
+}
+
+main #terno {
+    padding: 5%;
+    min-height: 100vh;
+}
+
+main #terno .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main #terno .box h3 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.dark-mode main #terno .box h3 {
+    color: var(--accent-color);
+}
+
+main #terno .content {
+    display: flex;
+    min-height: 90vh;
+    align-items: center;
+    /* justify-content: center; */
+    /* gap: 5%; */
+}
+
+main #terno .content .img-tb {
+    width: 50%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+main #terno .content .img-tb img {
+    width: 50%;
+    border-radius: 9px;
+}
+
+@media (max-width: 1078px) {
+    main #terno .content .img-tb img {
+        width: 60%;
+    }
+}
+
+main #terno .content .text {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main #terno .content .text p {
+    width: 75%;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 1.15;
+}
+
+@media (max-width: 930px) {
+    main #terno {
+        padding: 5%;
+    }
+
+    main #terno .content {
+        flex-direction: column;
+    }
+
+    main #terno .content .text {
+        width: 80%;
+    }
+
+    main #terno .content .text p {
+        width: 100%;
+    }
+}
+
+main #albuns {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    min-height: 100vh;
+    gap: 6vh;
+}
+
+main #albuns h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--accent-color);
+}
+
+main #albuns .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main #albuns .content .text {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+main #albuns .content .text h4 {
+    font-size: 1.8rem;
+}
+
+main #albuns .content .text p {
+    width: 80%;
+    font-size: 1.5rem;
+}
+
+main #albuns .content .img-tb {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+main #albuns .content .img-tb img {
+    width: 60%;
+}
+
+/* footer */
+
+
+/* others */
+
+.theme {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: var(--accent-color);
+    padding: 0.2rem;
+    border-radius: 4px;
+}
+
+.theme a {
+    text-decoration: none;
+}
+
+#dark-theme {
+    font-size: 1.6rem;
+}
+
+#light-theme {
+    font-size: 0;
+}
