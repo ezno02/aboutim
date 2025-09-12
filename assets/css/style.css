@@ -35,7 +35,7 @@ body {
 main #hero {
     height: 100dvh;
     padding: 5%;
-    background-image: url(/assets/images/atras-alem.svg);
+    background-image: url(../images/atras-alem.svg);
     background-position: center;
     background-size: cover;
 }
@@ -89,13 +89,16 @@ main #hero .content .bottom-hero a button {
     padding: 0.62rem 2rem;
     border-radius: 5px;
     color: #FFFFFF;
+    font-weight: bold;
 }
 
 main #hero .content .bottom-hero a button:hover {
     position: relative;
-    bottom: 2px;
+    bottom: 1px;
     box-shadow: 0 2px 8px 1px #121212;
     cursor: pointer;
+    color: #333333;
+    font-weight: bolder;
 }
 
 main #terno {
@@ -216,6 +219,20 @@ main #albuns .content .text p {
     font-size: 1.5rem;
 }
 
+@media (max-width: 1144px) {
+    main #albuns #album-recomeçar-content {
+        flex-direction: column-reverse;
+    }
+
+    main #albuns #album-mci-content {
+        flex-direction: column;
+    }
+
+    main #albuns .content .text {
+        width: 100%;
+    }
+}
+
 main #albuns .content .img-tb {
     display: flex;
     width: 50%;
@@ -225,6 +242,21 @@ main #albuns .content .img-tb {
 
 main #albuns .content .img-tb img {
     width: 60%;
+    border-radius: 9px;
+}
+
+@media (max-width: 920px) {
+    main #albuns .content .img-tb {
+        min-width: 50%;
+    }
+    main #albuns .content .img-tb img {
+        width: 400px;
+    }
+}
+@media (max-width: 450px) {
+    main #albuns .content .img-tb img {
+        width: 250px;
+    }
 }
 
 /* footer */
@@ -236,9 +268,11 @@ main #albuns .content .img-tb img {
     position: fixed;
     top: 20px;
     left: 20px;
-    background-color: var(--accent-color);
-    padding: 0.2rem;
-    border-radius: 4px;
+    background-color: var(--primary-text-color);
+    padding: 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
 }
 
 .theme a {
