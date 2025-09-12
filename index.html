@@ -49,7 +49,11 @@
             <div class="content" id="album-recomeçar-content">
                 <div class="text">
                     <h4>Recomeçar (2017)</h4>
-                    <p>Esse álbum de estreia marcou a transição de Tim Bernardes para sua carreira solo, revelando um lado mais íntimo e reflexivo de sua composição. Lançado com grande aclamação da crítica e público, Recomeçar é um trabalho que mistura a sofisticação da MPB e a melancolia do folk, com arranjos delicados e letras que exploram temas como solidão, recomeços e a busca por um novo sentido.</p>
+                    <p>Esse álbum de estreia marcou a transição de Tim Bernardes para sua carreira solo, revelando um
+                        lado mais íntimo e reflexivo de sua composição. Lançado com grande aclamação da crítica e
+                        público, Recomeçar é um trabalho que mistura a sofisticação da MPB e a melancolia do folk, com
+                        arranjos delicados e letras que exploram temas como solidão, recomeços e a busca por um novo
+                        sentido.</p>
                 </div>
                 <div class="img-tb">
                     <img src="assets/images/recomeçar-TB.jpg" alt="">
@@ -61,7 +65,50 @@
                 </div>
                 <div class="text">
                     <h4>Mil Coisas Invisíveis (2022)</h4>
-                    <p>Com Mil Coisas Invisíveis, Tim Bernardes expandiu sua sonoridade, incorporando elementos de música orquestral e folk progressivo em um trabalho ainda mais grandioso. O álbum, aclamado internacionalmente, aprofunda-se em temas existenciais e filosóficos, convidando o ouvinte a uma viagem sonora e introspectiva. É um disco que consolida a maturidade do artista e sua capacidade de criar paisagens sonoras complexas e emocionantes.</p>
+                    <p>Com Mil Coisas Invisíveis, Tim Bernardes expandiu sua sonoridade, incorporando elementos de
+                        música orquestral e folk progressivo em um trabalho ainda mais grandioso. O álbum, aclamado
+                        internacionalmente, aprofunda-se em temas existenciais e filosóficos, convidando o ouvinte a uma
+                        viagem sonora e introspectiva. É um disco que consolida a maturidade do artista e sua capacidade
+                        de criar paisagens sonoras complexas e emocionantes.</p>
+                </div>
+            </div>
+        </section>
+        <section id="discos">
+            <div class="box">
+                <h2>Musica</h2>
+                <div class="content">
+                    <div class="grid-discos">
+                        <div class="disco">
+                            <a href="#body" onclick="event.preventDefault(); showAlertAndRedirect('https://open.spotify.com/intl-pt/album/6B2dACJHYyu5lO3ws2pBbp?si=FvoJoZfzQcaZTeEIXgugyA');">
+                                <img src="assets/images/atrasalem-discos-terno.jpeg" alt="">
+                            </a>
+                        </div>
+                        <div class="disco">
+                            <a href="#body">
+                                <img src="assets/images/mdqp-terno.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="disco">
+                            <a href="#body">
+                                <img src="assets/images/66-terno.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="disco">
+                            <a href="#body">
+                                <img src="assets/images/oterno-terno.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="disco">
+                            <a href="#body">
+                                <img src="assets/images/mci-TB.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="disco">
+                            <a href="#body">
+                                <img src="assets/images/recomeçar-TB.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -73,6 +120,18 @@
     <div class="theme">
         <a href="#body" id="dark-theme">🌙</a>
         <a href="#body" id="light-theme">☀️</a>
+    </div>
+    <div class="alert-div">
+        <p>Você será redirecionado para o spotify para visualizar o disco <span id="discoRedirect"></span> Ok? Se você
+            estiver de acordo clice em continuar</p>
+        <div>
+            <a href="" id="cancel">
+                <button>Cancelar</button>
+            </a>
+            <a href="" id="continue">
+                <button>Continuar</button>
+            </a>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
