@@ -52,7 +52,7 @@ header .material-symbols-outlined {
 }
 
 @media (min-width: 1029px) {
-    header .material-symbols-outlined:hover{
+    header .material-symbols-outlined:hover {
         font-size: 2.2rem;
     }
 }
@@ -60,7 +60,7 @@ header .material-symbols-outlined {
 header menu {
     display: none;
     padding: 1%;
-    background-color: var(--primary-text-color);
+    background-color: var(--primary-bg-color);
     box-shadow: 2px 2px 4px 2px black;
     border-radius: 0.5rem;
     text-align: center;
@@ -76,7 +76,7 @@ header menu .menus {
 
 header menu .menus a {
     text-decoration: none;
-    color: var(--primary-bg-color);
+    color: var(--primary-text-color);
     display: block;
     width: 100%;
 }
@@ -86,7 +86,7 @@ header menu .theme {
     /* top: 20px; */
     /* left: 20px; */
     width: 50px;
-    background-color: var(--primary-text-color);
+    background-color: var(--primary-bg-color);
     padding: 0.5rem;
     border-radius: 50%;
     display: flex;
@@ -112,20 +112,24 @@ header menu .menus nav ul {
 }
 
 header menu .menus nav ul li {
-    border-top: solid 1px var(--primary-bg-color);
-    border-bottom: solid 1px var(--primary-bg-color);
     padding: 5px;
     cursor: pointer;
 }
 
-header menu .menus nav ul li:hover {
-    background-color: var(--accent-color);
+@media (min-width: 1029px) {
+    header menu .menus nav ul li:hover {
+        background-color: var(--accent-color);
+    }
+    header menu .theme:hover {
+        background-color: var(--accent-color);
+    }
 }
+
 
 /* main */
 
 main #hero {
-    height: 100dvh;
+    height: 100vh;
     padding: 5%;
     background-image: url(../images/atras-alem.svg);
     background-position: center;
