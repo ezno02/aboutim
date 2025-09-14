@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const darkTheme = document.getElementById('dark-theme')
     const lightTheme = document.getElementById('light-theme')
     const backToTopBtn = document.getElementById('backToTopBtn')
+    const menuBar = document.getElementById('menuBar')
 
     // funçaõ dark/light mode
     function toggleTheme(theme) {
@@ -46,4 +47,12 @@ document.addEventListener('DOMContentLoaded', () => {
             })
         })
     }
+
 })
+function clickMenu() {
+    if (menuBar.style.display == 'block') {
+        menuBar.style.display = ('none')
+    } else {
+        menuBar.style.display = ('block')
+    }
+}

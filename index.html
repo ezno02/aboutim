@@ -5,12 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tim-Bernardes</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
     <header>
-
+        <span class="material-symbols-outlined" onclick="clickMenu()">
+            menu
+        </span>
+        <menu id="menuBar">
+            <div class="menus">
+                <div class="theme">
+                    <a href="#body" id="dark-theme">🌙</a>
+                    <a href="#body" id="light-theme">☀️</a>
+                </div>
+                <nav>
+                    <ul>
+                        <a href="#hero"><li>Home</li></a>
+                        <a href="#terno"><li>O Terno</li></a>
+                        <a href="#albuns"><li>Solo</li></a>
+                        <a href="#discos"><li>Albuns</li></a>
+                    </ul>
+                </nav>
+            </div>
+        </menu>
     </header>
     <main>
         <section id="hero">
@@ -79,38 +99,38 @@
                 <div class="content">
                     <div class="grid-discos">
                         <div class="disco">
-                            <a
-                                href="https://open.spotify.com/intl-pt/album/6B2dACJHYyu5lO3ws2pBbp?si=Et51e-AuTAiLFcpReInqAw" target="_blank">
+                            <a href="https://open.spotify.com/intl-pt/album/6B2dACJHYyu5lO3ws2pBbp?si=Et51e-AuTAiLFcpReInqAw"
+                                target="_blank">
                                 <img src="assets/images/atrasalem-discos-terno.jpeg" alt="">
                             </a>
                         </div>
                         <div class="disco">
-                            <a
-                                href="https://open.spotify.com/intl-pt/album/6bjH9p0ZAdYbHqh8HFvspz?si=aT1bdwiKQ3qq-oSyNw77NQ" target="_blank">
+                            <a href="https://open.spotify.com/intl-pt/album/6bjH9p0ZAdYbHqh8HFvspz?si=aT1bdwiKQ3qq-oSyNw77NQ"
+                                target="_blank">
                                 <img src="assets/images/mdqp-terno.jpg" alt="">
                             </a>
                         </div>
                         <div class="disco">
-                            <a
-                                href="https://open.spotify.com/intl-pt/album/4woRdLXHCk9gTvr7BbtOKX?si=PdnFYxZZQSi4E9NU_oFtSg" target="_blank">
+                            <a href="https://open.spotify.com/intl-pt/album/4woRdLXHCk9gTvr7BbtOKX?si=PdnFYxZZQSi4E9NU_oFtSg"
+                                target="_blank">
                                 <img src="assets/images/oterno-terno.jpg" alt="">
                             </a>
                         </div>
                         <div class="disco">
-                            <a
-                                href="https://open.spotify.com/intl-pt/album/3iNtrqEywG7K98R4lYugx3?si=-xWTYFdZS2Cjjpm1Q2wA2w" target="_blank">
+                            <a href="https://open.spotify.com/intl-pt/album/3iNtrqEywG7K98R4lYugx3?si=-xWTYFdZS2Cjjpm1Q2wA2w"
+                                target="_blank">
                                 <img src="assets/images/66-terno.jpg" alt="">
                             </a>
                         </div>
                         <div class="disco">
-                            <a
-                                href="https://open.spotify.com/intl-pt/album/0icYpEwVxogZ6mCERLIVpa?si=TWSHnvHqQzeE9hbS2ow3dw" target="_blank">
+                            <a href="https://open.spotify.com/intl-pt/album/0icYpEwVxogZ6mCERLIVpa?si=TWSHnvHqQzeE9hbS2ow3dw"
+                                target="_blank">
                                 <img src="assets/images/mci-TB.jpg" alt="">
                             </a>
                         </div>
                         <div class="disco">
-                            <a
-                                href="https://open.spotify.com/intl-pt/album/6U97X9SjnkaBf94W5mkTs1?si=d7yDOx1VS_iipRsteB8pLw" target="_blank">
+                            <a href="https://open.spotify.com/intl-pt/album/6U97X9SjnkaBf94W5mkTs1?si=d7yDOx1VS_iipRsteB8pLw"
+                                target="_blank">
                                 <img src="assets/images/recomeçar-TB.jpg" alt="">
                             </a>
                         </div>
@@ -128,8 +148,8 @@
                 </a>
             </div>
             <div class="links">
-                <a
-                    href="https://www.instagram.com/auraequipe?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                <a href="https://www.instagram.com/auraequipe?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    target="_blank">
                     <img src="assets/images/instagram-logo-footer.png" alt="">
                 </a>
                 <a href="https://github.com/ezno02" target="_blank">
@@ -139,10 +159,6 @@
         </div>
     </footer>
 
-    <div class="theme">
-        <a href="#body" id="dark-theme">🌙</a>
-        <a href="#body" id="light-theme">☀️</a>
-    </div>
     <button id="backToTopBtn" title="Voltar ao Topo">&#x2191;</button>
     <script src="script.js"></script>
 </body>
