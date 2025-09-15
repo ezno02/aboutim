@@ -50,9 +50,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
 })
 function clickMenu() {
-    if (menuBar.style.display == 'block') {
-        menuBar.style.display = ('none')
+    if (menuBar.style.scale == '1') {
+        menuBar.style.scale = ('0')
     } else {
-        menuBar.style.display = ('block')
+        menuBar.style.scale = ('1')
     }
 }

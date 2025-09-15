@@ -43,6 +43,19 @@ header {
     width: 20%;
 }
 
+@media (max-width: 1100px) {
+    header {
+        width: 25%;
+    }
+}
+
+@media (max-width: 930px) {
+    header {
+        width: 30%;
+    }
+}
+
+
 header .material-symbols-outlined {
     color: var(--primary-text-color);
     font-weight: bolder;
@@ -58,7 +71,8 @@ header .material-symbols-outlined {
 }
 
 header menu {
-    display: none;
+    display: block;
+    scale: 0;
     padding: 1%;
     background-color: var(--primary-bg-color);
     box-shadow: 2px 2px 4px 2px black;
