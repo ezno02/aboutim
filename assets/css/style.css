@@ -134,6 +134,7 @@ header menu .menus nav ul li {
     header menu .menus nav ul li:hover {
         background-color: var(--accent-color);
     }
+
     header menu .theme:hover {
         background-color: var(--accent-color);
     }
@@ -583,6 +584,70 @@ footer .box .links a img:hover {
 #backToTopBtn:hover {
     background-color: var(--accent-color);
     transform: translateY(-3px);
+}
+
+.spotify-body {
+    overflow: hidden;
+}
+
+.spotify-box {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.spotify-body .spotify-box {
+    display: flex;
+    box-shadow: 0px 0px 400px 200px rgba(0, 0, 0, 0.39) inset;
+    -webkit-box-shadow: 0px 0px 400px 200px rgba(0, 0, 0, 0.39) inset;
+    -moz-box-shadow: 0px 0px 400px 200px rgba(0, 0, 0, 0.39) inset;
+}
+
+#backToBody {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-decoration: none;
+}
+
+#backToBody .material-symbols-outlined {
+    color: white;
+    font-size: 3.5rem;
+    cursor: pointer;
+}
+
+@media (min-width: 1029px) {
+    #backToBody .material-symbols-outlined:hover {
+        font-size: 4rem;
+    }
+}
+
+.spotify-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spotify-body .spotify-container {
+    display: flex;
+
+}
+
+#spotify-iframe {
+    display: none;
+    width: 60vw;
+}
+
+.spotify-body #spotify-iframe {
+    display: block;
+}
+
+.spotify-body #backToTopBtn {
+    display: none;
 }
 
 @media (max-width: 1030px) {
