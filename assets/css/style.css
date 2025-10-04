@@ -227,6 +227,10 @@ main #terno .box {
 main #terno .box h3 {
     font-size: 2.5rem;
     text-align: center;
+    animation: ternoAnimationTitle 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover -10% cover 30%;
+
 }
 
 .dark-mode main #terno .box h3 {
@@ -246,6 +250,9 @@ main #terno .content .img-tb {
     display: flex;
     align-items: start;
     justify-content: center;
+    animation: ternoAnimationImg 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover -10% cover 30%;
 }
 
 main #terno .content .img-tb img {
@@ -272,6 +279,9 @@ main #terno .content .text p {
     font-size: 1.5rem;
     text-align: center;
     line-height: 1.15;
+    animation: ternoAnimationText 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover -10% cover 30%;
 }
 
 @media (max-width: 930px) {
@@ -300,6 +310,40 @@ main #terno .content .text p {
     }
 }
 
+@keyframes ternoAnimationTitle {
+    0% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes ternoAnimationImg {
+    0% {
+        transform: rotate(-5deg);
+        opacity: 0.4;
+    }
+
+    100% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes ternoAnimationText {
+    0% {
+        transform: rotate(5deg);
+        opacity: 0.4;
+    }
+
+    100% {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}
+
 main #albuns {
     display: flex;
     flex-direction: column;
@@ -312,12 +356,18 @@ main #albuns h2 {
     text-align: center;
     font-size: 2.5rem;
     color: var(--accent-color);
+    animation: albunsAnimationTitle 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover -10% cover 30%;
 }
 
 main #albuns .content {
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: albunsAnimationContent 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover -10% cover 30%;
 }
 
 main #albuns .content .text {
@@ -380,6 +430,30 @@ main #albuns .content .img-tb img {
     }
 }
 
+@keyframes albunsAnimationTitle {
+    0% {
+        opacity: 0.3;
+        translate: -3vw 0;
+    }
+
+    100% {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+@keyframes albunsAnimationContent {
+    0% {
+        opacity: 0.3;
+        translate: 3vw 0;
+    }
+
+    100% {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
 main #discos {
     min-height: 100vh;
     padding: 3%;
@@ -397,12 +471,18 @@ main #discos .box h2 {
     font-size: 2rem;
     margin-bottom: 20px;
     border-bottom: solid var(--primary-text-color);
+    animation: discosAnimationContent 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover -10% cover 30%;
 }
 
 main #discos .box .content {
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: discosAnimationContent 1ms ease-in-out;
+    animation-timeline: view();
+    animation-range: cover -10% cover 30%;
 }
 
 main #discos .box .content .grid-discos {
@@ -456,6 +536,18 @@ main #discos .box .content .grid-discos .disco img:hover {
 
     main #discos .box .content .grid-discos .disco a {
         max-width: 80%;
+    }
+}
+
+@keyframes discosAnimationContent {
+    0% {
+        opacity: 0.3;
+        translate: 0 -5vh;
+    }
+
+    100% {
+        opacity: 1;
+        translate: 0 0;
     }
 }
 
