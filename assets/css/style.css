@@ -602,9 +602,7 @@ footer .box .links a img:hover {
 
 .spotify-body .spotify-box {
     display: flex;
-    box-shadow: 0px 0px 400px 200px rgba(0, 0, 0, 0.39) inset;
-    -webkit-box-shadow: 0px 0px 400px 200px rgba(0, 0, 0, 0.39) inset;
-    -moz-box-shadow: 0px 0px 400px 200px rgba(0, 0, 0, 0.39) inset;
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
 #backToBody {
